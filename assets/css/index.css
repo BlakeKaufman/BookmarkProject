@@ -1,0 +1,729 @@
+/* Presets */
+body{
+    font-size: 18px; 
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    color: hsl(228, 45%, 44%);
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* nav */
+nav{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .image{
+    display: flex;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+}
+nav .mb-nav{
+    display: none;
+}
+
+nav li a:hover{
+    color:hsl(0, 94%, 66%);
+}
+nav li a{
+    text-decoration: none;
+}
+.padding-r{
+    padding-right: 2.5rem;
+}
+
+.box{
+    padding: 5px 25px;
+    color: white;
+    background-color: hsl(0, 94%, 66%);
+    border: 2px solid hsl(0, 94%, 66%);
+    border-radius: 4px;
+}
+
+.box:hover{
+    background-color: white;
+    border: 2px solid hsl(0, 94%, 66%);
+    color: hsl(0, 94%, 66%);
+}
+@media screen and (max-width: 700px) {
+
+    nav{
+        width: 90%;
+        height: 4.5rem;
+    }
+    nav ul{
+        display: none;
+    }
+    nav .mb-nav{
+        display: block;
+    }
+
+
+  }
+/* A simple Bookmark Manager */
+/* main */
+.bookmark-manager{
+    margin: 0 auto;
+    margin-top: 5rem;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.leftContentBookmark{
+    width: 30rem;
+    text-align: left;
+    margin-right: 2.5rem;
+}
+
+/* buttons */
+.buttons-bookmark{
+    display: flex;
+    flex-direction: row
+}
+.bookmarkButtonPad{
+    margin-right: 1.5rem;
+}
+.bookmarkButtonsBorder-r{
+    padding: 8px 18px;
+    background-color:hsl(231, 69%, 60%) ;
+    color: white;
+    border: 2px solid hsl(231, 69%, 60%);
+    border-radius: 7px;
+}
+.buttons-bookmark .bookmarkButtonsBorder-r:hover{
+    color: hsl(231, 69%, 60%) ;
+    background-color: white;
+    border-color:  hsl(231, 69%, 60%);
+    cursor: pointer;
+}
+.bookmarkButtonsBorder-l{
+    padding: 8px 18px;
+    background-color:hsl(229, 8%, 60%) ;
+    color:hsl(229, 31%, 21%) ;
+    border: 2px solid hsl(229, 8%, 60%);
+    border-radius: 7px;
+    opacity: 0.7;
+}
+.buttons-bookmark .bookmarkButtonsBorder-l:hover{
+    color: hsl(229, 31%, 21%) ;
+    border-color:  hsl(229, 31%, 21%);
+    background-color: white;
+    cursor: pointer;
+}
+
+/* image */
+.bookmark-manager img{
+    width: 40%;
+}
+
+@media screen and (max-width: 425px) {
+    .bookmark-manager{
+        width: 90%;
+        margin-top: 2rem;
+        flex-direction: column-reverse;
+    }
+    .leftContentBookmark{
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+    .bookmark-manager img{
+        width: 90%;
+        margin: 0 0 0 3.5rem;
+    }
+}
+@media screen and (max-width: 877px) and (min-width:425px) {
+    .bookmark-manager img{
+        display: none;
+    }
+    .leftContentBookmark{
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .bookmark-manager .buttons-bookmark{
+        margin: 0 auto;
+        justify-content: center;
+    }
+}
+
+/* features */
+.features{
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+.features .bodyText{
+    width: 44%;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+}
+.features .options{
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.features .options p{
+    margin-bottom: 0;
+    border-bottom: 1px solid hsl(229, 8%, 60%);
+}
+
+.features .options .featureHover:hover{
+    color: hsl(0, 94%, 66%);
+    cursor: pointer;
+    
+}
+.padding-r-l{
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    padding-bottom: 1rem;
+}
+/* bookmarking */
+#bookmarking{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 3.5rem;
+    height: 20rem;
+}
+#bookmarking img{
+    height: 85%;
+}
+#bookmarking .text{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    justify-content: center;
+    text-align: left;
+}
+
+#simpleBookmarking{
+    border-bottom :3px solid hsl(0, 94%, 66%);
+}
+/* button */
+
+#bookmarking .text .button{
+    color: white;
+    background-color: hsl(231, 69%, 60%);
+    padding: 1rem;
+    border-radius: 5px;
+    width: 80px;
+
+}
+
+/* SpeedySearch */
+#speadySearch{
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 3.5rem;
+    height: 20rem;
+}
+
+#speadySearch img{
+    height: 85%;
+}
+#speadySearch .text{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    justify-content: center;
+    text-align: left;
+}
+/* button */
+
+#speadySearch .text .button{
+    color: white;
+    background-color: hsl(231, 69%, 60%);
+    padding: 1rem;
+    border-radius: 5px;
+    width: 80px;
+}
+/* sharing */
+.bookmarking .text .button{
+    color: white;
+    background-color: hsl(231, 69%, 60%);
+    padding: 1rem;
+    border-radius: 5px;
+    width: 20%;
+
+}
+
+/* SpeedySearch */
+#sharing{
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 3.5rem;
+    height: 20rem;
+}
+
+#sharing img{
+    height: 85%;
+}
+#sharing .text{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    justify-content: center;
+    text-align: left;
+}
+/* button */
+
+#sharing .text .button{
+    color: white;
+    background-color: hsl(231, 69%, 60%);
+    padding: 1rem;
+    border-radius: 5px;
+    width: 80px;
+}
+
+@media screen and (max-width: 425px) {
+    .features{
+        width: 90%;
+    }
+    .features .bodyText{
+        width: auto;
+    }
+    .features .options{
+        flex-direction: column;
+        width: 90%;
+    }
+    .features #bookmarking{
+        flex-direction: column;
+        margin-top: 17rem;
+    }
+    .features #speadySearch{
+        flex-direction: column;
+        margin-top: 17rem;
+    }
+    .features #sharing{
+        flex-direction: column;
+        margin-top: 17rem;
+    }
+    #bookmarking .text{
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 2rem;
+        margin-bottom: 10rem;
+    }
+    #speadySearch .text{
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 2rem;
+        margin-bottom: 10rem;
+    }
+    #sharing .text{
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 2rem;
+        margin-bottom: 10rem;
+    }
+    .buttonHolder .button{
+        display: none;
+    }
+}
+@media screen and (max-width: 880px) and (min-width:425px) {
+    .features{
+        width: 90%;
+    }
+    .features .bodyText{
+        width: auto;
+    }
+    .features .options{
+        flex-direction: column;
+        width: 90%;
+    }
+    .features #bookmarking{
+        flex-direction: column;
+        margin-top: 17rem;
+    }
+    .features #speadySearch{
+        flex-direction: column;
+        margin-top: 17rem;
+    }
+    .features #sharing{
+        flex-direction: column;
+        margin-top: 17rem;
+    }
+    #bookmarking .text{
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 2rem;
+        margin-bottom: 10rem;
+    }
+    #speadySearch .text{
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 2rem;
+        margin-bottom: 10rem;
+    }
+    #sharing .text{
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 2rem;
+        margin-bottom: 10rem;
+    }
+    .buttonHolder .button{
+        display: none;
+    }
+    #bookmarking img{
+        width: 50%;
+        margin: 0 auto;
+    }
+    #speadySearch img{
+        width: 50%;
+        margin: 0 auto;
+    }
+    #sharing img{
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+
+/* extensions */
+.extension{
+    width: 100%;
+    margin: 0 auto;
+    margin-top:5rem;
+}
+
+.extension .text{
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
+}
+.extension .options{
+    width: 63%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.extension .options .fireFox{
+    margin-top: 1.5rem;
+}
+.extension .options .opera{
+    margin-top: 3rem;
+}
+.options .logo{
+    margin-top: 2.5rem;
+}
+.spaceing-t{
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+.spacing-h{
+    margin-bottom: .75rem;
+}
+
+.boxShadow{
+    height: 50%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px hsl(231, 69%, 60%);
+}
+/* button */
+.options .button{
+    width: 87%;
+    margin: 0 auto;
+}
+.options .button p{
+    padding: 10px 1px;
+    background-color:hsl(231, 69%, 60%) ;
+    color:white;
+    border-radius: 5px;
+    border: 2px solid hsl(231, 69%, 60%);
+    
+}
+.options .button p:hover{
+    background-color: white;
+    color: hsl(231, 69%, 60%) ;
+    border: 2px solid hsl(231, 69%, 60%);
+    cursor: pointer;
+
+}
+
+@media screen and (max-width: 425px) {
+    .opera{
+        margin-top: 1.5rem;
+    }
+    .extension .text{
+        width: 80%;
+    }
+    .extension .options{
+        width: 75%;
+        flex-direction: column;
+    }
+    .dots{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1365px) and (min-width:1100px){
+    .fireFox{
+        width: 220px;
+    }
+    .crome{
+        width: 220px;
+    }
+    .opera{
+        width: 220px;
+    }
+    .dots{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1100px) and (min-width:425px){
+    .extension .text{
+        width: 80%;
+    }
+    .extension .options{
+        width: 300px;
+        flex-direction: column;
+    }
+    .opera{
+        margin-top: 1.5rem;
+    }
+}
+/* FAQ */
+
+.FAQ{
+    margin-top: 5rem;
+}
+.FAQ .text{
+    width: 32%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.stlyeFAQ{
+    width: 38%;
+    margin: 0 auto;
+}
+
+.border{
+    border-top: 1px solid hsl(229, 8%, 60%) ;
+}
+.borderB{
+    border-bottom: 1px solid hsl(229, 8%, 60%) ;
+
+}
+
+.q{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+#a1{
+    display: none;
+}
+#a2{
+    display: none;
+}
+#a3{
+    display: none;
+}
+#a4{
+    display: none;
+}
+
+.FAQ .hv:hover{
+    color:hsl(0, 94%, 66%);
+    cursor: pointer;
+}
+
+/* button */
+.FAQ .button{
+    color: white;
+    background-color: hsl(231, 69%, 60%);
+    padding: 1rem;
+    border-radius: 5px;
+    width: 80px;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+@media screen and (max-width: 425px) {
+    .FAQ{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 3rem;
+    }
+    .FAQ .text{
+        width: 90%;
+    }
+    .FAQ .quesions{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .stlyeFAQ{
+        width: 90%;
+    }
+    .FAQ .button{
+        width: 40%;
+    }
+}
+
+.emailSignUp{
+    background-color:hsl(231, 69%, 60%) ;
+    color: white;
+    margin-top: 9rem;
+}
+.emailSignUp p{
+    padding-top: 3rem;
+    letter-spacing: .25rem;
+    
+}
+.emailSignUp h2{
+    width: 25%;
+    margin: 0 auto;
+    line-height: 2.5rem;
+}
+
+.emailSignUp form{
+    margin-top: 2rem;
+    padding-bottom: 3rem;
+}
+.emailSignUp form .testField{
+    width: 20%;
+    padding: 10px 0px 10px 5px;
+    margin-right: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+.emailSignUp form .submit{
+    padding: 9px 12px;
+    background-color:hsl(0, 94%, 66%) ;
+    color: white;
+    border: 2px solid hsl(0, 94%, 66%);
+    border-radius: 5px;
+}
+.emailSignUp form .submit:hover{
+    background-color: white;
+    color: hsl(0, 94%, 66%);
+    border: 2px solid hsl(0, 94%, 66%);
+    cursor: pointer;
+
+}
+
+.bottom-nav{
+    background-color:hsl(229, 31%, 21%) ;
+}
+.bottom-nav .content{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.content .left-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.bottom-nav .content img{
+    height: 50%;
+}
+
+.bottom-nav .content ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.bottom-nav .content li{
+    color: white;
+}
+.bottom-nav .content li:hover{
+    color: hsl(0, 94%, 66%);
+    cursor: pointer;
+}
+
+
+.bottom-nav .content .right-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.spacing-nv-b{
+    margin-right: 1.5rem;
+}
+
+/* colors  */
+
+.darkblue{
+    color: hsl(229, 31%, 21%);
+}
+
+.lightgray{
+    color: hsl(229, 8%, 60%);
+}
+
+@media screen and (max-width: 1110px) {
+    .emailSignUp h2{
+        width: 95%;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    form input#email{
+        width: 20rem;
+        margin: 0;
+    }
+    form .submit{
+        margin-top: 1rem;
+        width: 20rem;
+    }
+    .bottom-nav .content{
+        flex-direction: column;
+    }
+    .bottom-nav .left-content{
+        flex-direction: column;
+    }
+    .bottom-nav .left-content ul{
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    .bottom-nav .left-content ul li{
+        margin: 0;
+        margin-top: 2rem;
+    }
+    .left-content{
+        margin: 0;
+        margin-top: 2rem;
+    }
+    .right-content{
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+    }
+}
