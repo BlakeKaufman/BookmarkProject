@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/index.css">
+  
+  <title>Frontend Mentor | Bookmark landing page</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="image">
+      <img src="./images/logo-bookmark.svg" alt="">
+    </div>
+    <ul>
+      <li class="padding-r"><a href="#">Features</a></li>
+      <li class="padding-r"><a href="#">Pricing</a></li>
+      <li class="padding-r"><a href="#">Contact</a></li>
+      <li><a class="box boxShadow" href="#">Login</a></li>
+    </ul>
+    <img class="mb-nav" src="./images/icon-hamburger.svg" alt="">
+  </nav>
+  <div class="bookmark-manager">
+    <div class="leftContentBookmark">
+      <h1 class="darkblue">A Simple Bookmark Manager</h1>
+      <p class="lightgray">A clean and simple interface to organize your favourite websites. Open a new 
+      browser tab and see your sites load instantly. Try it for free.</p>
+      <div class="buttons-bookmark">
+        <p class="bookmarkButtonsBorder-r bookmarkButtonPad boxShadow ">Get it on Chrome</p>
+        <p class=" bookmarkButtonsBorder-l boxShadow">Get it on Firefox</p>
+      </div>
+    </div>
+    <img src="./images/illustration-hero.svg" alt="">
+
+  </div>
+
+  <div class="features">
+    <h2 class="darkblue">Features</h2>
+    <p class="lightgray bodyText">Our aim is to make it quick and easy for you to access your favourite websites. 
+      Your bookmarks sync between your devices so you can access them on the go.</p>
+    <div class="options ">
+      <p class="lightgray padding-r-l featureHover" id="simpleBookmarking">Simple Bookmarking</p>
+      <p class="lightgray padding-r-l featureHover" id="speedySearching">Speedy Searching</p>
+      <p class="lightgray padding-r-l featureHover" id="easySharing">Easy Sharing</p>
+    </div>
+    <div id="bookmarking" class="formatting-features">
+      <img class ="formatting-features-img" src="./images/illustration-features-tab-1.svg" alt="">
+      <div class="formatting-features-text">
+        <h2 class="darkblue">Bookmark in one click</h2>
+        <p class="lightgray">Organize your bookmarks however you like. Our simple drag-and-drop interface 
+          gives you complete control over how you manage your favourite sites.</p>
+        <div class="buttonHolder">
+          <p class="button">More Info</p>
+        </div>
+      </div>
+    </div>
+    <div id="speadySearch" class="formatting-features">
+      <img class="formatting-features-img" src="./images/illustration-features-tab-2.svg" alt="">
+      <div class="formatting-features-text">
+        <h2 class="darkblue">Intelligent search</h2>
+        <p class="lightgray">Our powerful search feature will help you find saved sites in no time at all. 
+          No need to trawl through all of your bookmarks.</p>
+        <div class="buttonHolder">
+          <p class="button">More Info</p>
+        </div>
+      </div>
+    </div>
+    <div id="sharing" class="formatting-features">
+      <img src="./images/illustration-features-tab-3.svg" class="formatting-features-img" alt="">
+      <div class="formatting-features-text">
+        <h2 class="darkblue">Share your bookmarks</h2>
+        <p class="lightgray">Easily share your bookmarks and collections with others. Create a shareable 
+          link that you can send at the click of a button..</p>
+        <div class="buttonHolder">
+          <p class="button">More Info</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="extension">
+    <h2 class="darkblue">Download the extension</h2>
+    <p class="lightgray text">We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+      got a favourite you’d like us to prioritize.</p>
+    <div class="options">
+      <div class="crome boxShadow with">
+        <img class="logo" src="./images/logo-chrome.svg" alt="">
+        <h3 class="darkblue spacing-h">Add to Chrome</h3>
+        <p class="lightgray spaceing-t">Minimum version 62</p>
+        <img class="dots" src="./images/bg-dots.svg" alt="">
+        <div class="button">
+          <p class="lightgray">Add & Install Extension</p>
+        </div>
+      </div>
+      <div class="fireFox boxShadow with">
+        <img class="logo" src="./images/logo-firefox.svg" alt="">
+        <h3 class="darkblue spacing-h">Add to FireFox</h3>
+        <p class="lightgray spaceing-t">Minimum version 55</p>
+        <img class="dots" src="./images/bg-dots.svg" alt="">
+        <div class="button">
+          <p class="lightgray">Add & Install Extension</p>
+        </div>
+      </div>
+      <div class="opera boxShadow with">
+        <img class="logo" src="./images/logo-opera.svg" alt="">
+        <h3 class="darkblue spacing-h">Add to Opera</h3>
+        <p class="lightgray spaceing-t">Minimum version 46</p>
+        <img class="dots" src="./images/bg-dots.svg" alt="">
+        <div class="button">
+          <p class="lightgray">Add & Install Extension</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="FAQ">
+    <h2 class="darkblue">Frequently Asked Questions</h2>
+    <p class="lightgray text">Here are some of our FAQs. If you have any other questions you’d like 
+      answered please feel free to email us.</p>
+    <div class="quesions">
+      <div class="border stlyeFAQ">
+        <div class="q" id="q1">
+          <h4 class="darkblue hv">What is Bookmark?</h4>
+          <img src="./images/icon-arrow.svg" alt="">
+        </div>
+        <p class="lightgray" id="a1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+          justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+      </div>
+      <div class="border stlyeFAQ">
+        <div class="q" id="q2">
+          <h4 class="darkblue hv">How can I request a new browser?</h4>
+          <img src="./images/icon-arrow.svg" alt="">
+        </div>
+        <p class="lightgray" id="a2">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+          Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+          ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+          Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+      </div>
+      <div class="border stlyeFAQ">
+        <div class="q" id="q3">
+          <h4 class="darkblue hv">Is there a mobile app?</h4>
+          <img src="./images/icon-arrow.svg" alt="">
+        </div>
+        <p class="lightgray" id="a3">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+          urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+          sollicitudin ex et ultricies bibendum.</p>
+      </div>
+      <div class="border stlyeFAQ borderB">
+        <div class="q" id="q4">
+          <h4 class="darkblue hv">What about other Chromium browsers?</h4>
+          <img src="./images/icon-arrow.svg" alt="">
+        </div>
+        <p class="lightgray" id="a4">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+          vitae neque eget nisl gravida pellentesque non ut velit.</p>
+      </div>
+      <div><p class="button">More Info</p></div>
+    </div>
+  </div>
+  
+
+  <!-- Question 1 -->
+
+  <!-- Answer 1 -->
+
+  <!-- Question 2 -->
+
+  <!-- Answer 2 -->
+  
+  <!-- Question 3 -->
+
+  <!-- Answer 3 -->
+
+  <!-- Question 4 -->
+
+
+  <!-- Answer 4 -->
+
+  <div class="emailSignUp">
+    <p>35,000+ already joined</p>
+    <h2>Stay up-to-date with what we’re doing</h2>
+    <form action="#">
+      <input class="testField" type="text" id="email" name="email" placeholder="example@email.com" min="100">
+      <input type="submit" value="Contact Us" class="submit">
+    </form>
+  </div>
+  <div class="bottom-nav">
+    <div class="content">
+      <div class="left-content">
+        <img class="spacing-nv-b" src="/images/logo-bookmark.svg" alt="" style="filter: invert(100%) sepia(65%) saturate(2%) hue-rotate(239deg) brightness(114%) contrast(101%);">
+        <ul>
+          <li class="spacing-nv-b">Features</li>
+          <li class="spacing-nv-b">Pricing</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="right-content">
+        <a href="#"><img class="spacing-nv-b" src="./images/icon-facebook.svg" alt=""></a>
+        <a href="#"><img src="./images/icon-twitter.svg" alt=""></a>
+      </div>
+    </div>
+
+  </div> 
+  <script type="text/javascript">
+    // Features
+    const button1 = document.getElementById("simpleBookmarking")
+    const button2 = document.getElementById("speedySearching")
+    const button3 = document.getElementById("easySharing")
+
+
+
+    // funciions
+    function sbookmark(){
+      document.getElementById("speadySearch").style.display = "none"
+      document.getElementById("bookmarking").style.display = "flex"
+      document.getElementById("sharing").style.display = "none"
+
+      button1.style.borderBottom = "3px solid hsl(0, 94%, 66%)"
+
+      button2.style.borderBottom = "1px solid hsl(229, 8%, 60%"
+
+      button3.style.borderBottom = "1px solid hsl(229, 8%, 60%"
+
+    }
+
+    function speedy(){
+      document.getElementById("speadySearch").style.display = "flex"
+      document.getElementById("bookmarking").style.display = "none"
+      document.getElementById("sharing").style.display = "none"
+
+      button2.style.borderBottom = "3px solid hsl(0, 94%, 66%)"
+
+      button3.style.borderBottom = "1px solid hsl(229, 8%, 60%"
+
+      button1.style.borderBottom = "1px solid hsl(229, 8%, 60%"
+
+
+
+    }
+    function sharing(){
+      document.getElementById("speadySearch").style.display = "none"
+      document.getElementById("bookmarking").style.display = "none"
+      document.getElementById("sharing").style.display = "flex"
+
+      button3.style.borderBottom = "3px solid hsl(0, 94%, 66%)"
+
+      button2.style.borderBottom = "1px solid hsl(229, 8%, 60%"
+
+      button1.style.borderBottom = "1px solid hsl(229, 8%, 60%"
+
+    }
+    button1.addEventListener("click", sbookmark)
+    button2.addEventListener("click",speedy)
+    button3.addEventListener("click",sharing)
+
+    // FAQ
+    const q1 = document.getElementById("q1")
+    const q2 = document.getElementById("q2")
+    const q3 = document.getElementById("q3")
+    const q4 = document.getElementById("q4")
+
+    const a1 =  document.getElementById("a1")
+    const a2 =  document.getElementById("a2")
+    const a3 =  document.getElementById("a3")
+    const a4 =  document.getElementById("a4")
+
+    function bookmark(){
+      if(a1.style.display === "block"){
+        a1.style.display = "none"
+      }else{
+        a1.style.display = "block"
+      }
+    }
+
+    function browser(){
+      if(a2.style.display === "block"){
+        a2.style.display = "none"
+      }else{
+        a2.style.display = "block"
+      }
+    }
+
+    function app(){
+      if(a3.style.display === "block"){
+        a3.style.display = "none"
+      }else{
+        a3.style.display = "block"
+    }
+  }
+
+    function chromiun(){
+      if(a4.style.display === "block"){
+        a4.style.display = "none"
+      }else{
+        a4.style.display = "block"
+    }
+    }
+
+    q1.addEventListener("click", bookmark)
+    q2.addEventListener("click", browser)
+    q3.addEventListener("click", app)
+    q4.addEventListener("click", chromiun)
+
+  </script>
+</body>
+</html>
